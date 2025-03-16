@@ -1,2 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Yutian</h1>
+<p>Hello, welcome!</p>
+<img src="/images/yttrio_cropped4.jpg" alt="Enjoy this oil painting of me. Yes. I am a work of art." width="300 px">
+
