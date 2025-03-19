@@ -12,8 +12,7 @@
 <h1>{ projects.length } Projects</h1>
 <div class="projects">
     {#each projects as p}
-    <Project data={p} hLevel="3" />
-    <!-- <Project data={p} /> -->
+    <Project data={p} />
       <!-- <article>
         <h2>{p.title}</h2>
         <img src={p.image} alt="" />

@@ -107,14 +107,14 @@ img {
 }
 
 /* Step 4.2: Apply responsive grid */
-.projects {
+/* .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
-}
+} */
 
 /* Step 4.3: Horizontal alignment with subgrid */
-.projects {
+/* .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
@@ -128,7 +128,7 @@ img {
 
 .projects h2 {
   margin: 0;
-}
+} */
 
 /* Step 4.4: Finishing touches */
 h1 {
