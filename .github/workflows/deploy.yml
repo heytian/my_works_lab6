@@ -40,7 +40,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: "https://heytian.github.io/my_works"
+      url: "https://heytian.github.io/my_works_lab5"
 
     steps:
       - name: Deploy
