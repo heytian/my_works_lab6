@@ -8,14 +8,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+    // Detect base path (empty in dev, "/my_works_lab5" in production)
+    let basePath = window.location.hostname === "localhost" ? "" : "/my_works_lab5";
 
     let pages = [
-        { url: "/my_works_lab5", title: "Home" },
-        { url: "/my_works_lab5/projects", title: "Projects" },
-        { url: "/my_works_lab5/contact", title: "Contact" },
-        { url: "/my_works_lab5/cv", title: "CV" },
-        { url: "https://github.com/heytian", title: "Github" }
+        { url: `${basePath}/`, title: "Home" },
+        { url: `${basePath}/projects`, title: "Projects" },
+        { url: `${basePath}/contact`, title: "Contact" },
+        { url: `${basePath}/cv`, title: "CV" },
+        { url: "https://github.com/heytian", title: "Github" } // External link
     ];
+
+    // let pages = [
+    //     { url: "/my_works_lab5", title: "Home" },
+    //     { url: "/my_works_lab5/projects", title: "Projects" },
+    //     { url: "/my_works_lab5/contact", title: "Contact" },
+    //     { url: "/my_works_lab5/cv", title: "CV" },
+    //     { url: "https://github.com/heytian", title: "Github" }
+    // ];
 
     let nav = document.createElement("nav");
     document.body.prepend(nav);
