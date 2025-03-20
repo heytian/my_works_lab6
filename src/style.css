@@ -12,13 +12,12 @@ body {
     padding: 1rem;
    }
 
-   /* Step 2.1: Getting <ul> and <li> out of the way */
-   nav ul, 
+
+   /* nav ul, 
    nav li {
-    display: contents; /* remove styling */
+    display: contents; 
   }
 
-  /* Step 2.2: Add flex box to nav */
   nav{
     display:flex;
     justify-content: space-between;
@@ -28,7 +27,6 @@ body {
     border-bottom-color: oklch(80% 3% 200); 
   }
 
-  /* Step 2.3: Add style */
   nav a {
     flex: 1;
     text-decoration: none;
@@ -44,14 +42,11 @@ body {
     padding-bottom:0.5rem;
   }
 
-  /* Step 2.4: Accent color hover */
 nav a:hover {
-  border-bottom: 0.4em solid oklch(70% 0.1 187); /* Accent color on hover */
-  /* background-color: oklch(from var(--color-accent) 95% 5% h) */
+  border-bottom: 0.4em solid oklch(70% 0.1 187); 
   background-color: color-mix(in oklch, var(--color-accent), canvas 85%); 
-  /* ^ fix dark mode color */
 
-}
+} */
 
 /* Step 3.1: Contact form font inherit */
 input,
@@ -105,30 +100,6 @@ button {
 img {
   max-width: 100%;
 }
-
-/* Step 4.2: Apply responsive grid */
-/* .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 1em;
-} */
-
-/* Step 4.3: Horizontal alignment with subgrid */
-/* .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 1em;
-}
-
-.projects article {
-  display: grid;
-  grid-template-rows: subgrid;
-  grid-row: span 3;
-}
-
-.projects h2 {
-  margin: 0;
-} */
 
 /* Step 4.4: Finishing touches */
 h1 {
