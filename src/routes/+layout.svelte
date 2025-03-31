@@ -3,16 +3,17 @@
 <script>
 
 import { page } from "$app/stores";
+import { base } from "$app/paths";
 import "../style.css";
 
 
-    let pages = [
-  { url: "./", title: "Home" },
-  { url: "./projects", title: "Projects" },
-  { url: "./contact", title: "Contact" },
-  { url: "./cv", title: "CV" },
-  { url: "https://github.com/heytian", title: "Github" }
-];
+//     let pages = [
+//   { url: "./", title: "Home" },
+//   { url: "./projects", title: "Projects" },
+//   { url: "./contact", title: "Contact" },
+//   { url: "./cv", title: "CV" },
+//   { url: "https://github.com/heytian", title: "Github" }
+// ];
 
 
 // let pages = [
@@ -22,6 +23,14 @@ import "../style.css";
 //         { url: "/my_works_lab5/cv", title: "CV" },
 //         { url: "https://github.com/heytian", title: "Github" }
 //     ];
+
+let pages = [
+    { url: `${base}/`, title: "Home" },
+    { url: `${base}/projects`, title: "Projects" },
+    { url: `${base}/contact`, title: "Contact" },
+    { url: `${base}/cv`, title: "CV" },
+    { url: "https://github.com/heytian", title: "Github" }
+  ];
 
 // Step 2.2/ 2.4 Bind color scheme to a variable
 let localStorage = globalThis.localStorage ?? {};
@@ -36,25 +45,30 @@ $: root?.style.setProperty("color-scheme", colorScheme);
 
 </script>
 
-<nav>
+<!-- <nav>
   {#each pages as p}
   <a 
   href={p.url} 
-  class:current={"." + $page.route.id === p.url}
+  class:current={$page.route.id === p.url.replace("/my_works_lab5","/")}
   target={p.url.startsWith("http") ? "_blank" : null}
   >
     {p.title}
   </a>
-
-  <!-- <a href={p.url} class={"." + $page.route.id === p.url ? "current" : ""}
-  target={p.url.startsWith("http") ? "_blank" : null}
-  >
-    {p.title} 
-  </a> -->
-  
   {/each}
-  
+</nav> -->
+
+<nav>
+  {#each pages as p}
+  <a 
+    href={p.url} 
+    class:current={$page.url.pathname === p.url}
+    target={p.url.startsWith("http") ? "_blank" : null}
+  >
+    {p.title}
+  </a>
+  {/each}
 </nav>
+
 
 <!-- Add theme switcher -->
 
