@@ -65,9 +65,9 @@ button {
     box-sizing: border-box;
 }
 
-label {
+/* label {
     margin-block: 0.5rem;
-}
+} */
 
 /* Step 3.3: CSS Grid layout */
 
@@ -118,13 +118,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.3rem;
 }
 
-.color-scheme {
+/* .color-scheme {
   position: fixed !important;
   top: 10px !important;
   right: 10px !important;
-  left: auto !important;  /* Prevent left-side positioning */
-  width: auto;  /* Prevent container issues */
-  max-width: none;  /* Ensure it doesn't shrink */
+  left: auto !important;  
+  width: auto;  
+  max-width: none;  
   background: rgba(255, 255, 255, 0.8);
   padding: 5px 10px;
   border-radius: 5px;
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   gap: 2px;
   z-index: 1000 !important;
-}
+} */
 
 
 /* Ensure the select dropdown is properly styled */

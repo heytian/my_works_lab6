@@ -6,39 +6,70 @@ import { page } from "$app/stores";
 import "../style.css";
 
 
-//     let pages = [
-//   { url: "./", title: "Home" },
-//   { url: "./projects", title: "Projects" },
-//   { url: "./contact", title: "Contact" },
-//   { url: "./cv", title: "CV" },
-//   { url: "https://github.com/heytian", title: "Github" }
-// ];
+    let pages = [
+  { url: "./", title: "Home" },
+  { url: "./projects", title: "Projects" },
+  { url: "./contact", title: "Contact" },
+  { url: "./cv", title: "CV" },
+  { url: "https://github.com/heytian", title: "Github" }
+];
 
-let pages = [
-        { url: "/my_works_lab5", title: "Home" },
-        { url: "/my_works_lab5/projects", title: "Projects" },
-        { url: "/my_works_lab5/contact", title: "Contact" },
-        { url: "/my_works_lab5/cv", title: "CV" },
-        { url: "https://github.com/heytian", title: "Github" }
-    ];
+
+// let pages = [
+//         { url: "/my_works_lab5", title: "Home" },
+//         { url: "/my_works_lab5/projects", title: "Projects" },
+//         { url: "/my_works_lab5/contact", title: "Contact" },
+//         { url: "/my_works_lab5/cv", title: "CV" },
+//         { url: "https://github.com/heytian", title: "Github" }
+//     ];
+
+// Step 2.2/ 2.4 Bind color scheme to a variable
+let localStorage = globalThis.localStorage ?? {};
+let colorScheme = localStorage.colorScheme ?? "light dark";
+$: localStorage.colorScheme = colorScheme;
+
+
+// Step 2.3
+let root = globalThis?.document?.documentElement;
+$: root?.style.setProperty("color-scheme", colorScheme);
 
 
 </script>
 
 <nav>
   {#each pages as p}
-  <!-- <a href="{p.url}">{p.title}</a> -->
-  <!-- <a href={p.url} class:current={"." + $page.route.id === p.url}>
-    {p.title}
-  </a> -->
-  <a
-  href={p.url}
+  <a 
+  href={p.url} 
   class:current={"." + $page.route.id === p.url}
-  target={p.url.startsWith("http") ? "_blank" : null}>
-  {p.title}</a>
+  target={p.url.startsWith("http") ? "_blank" : null}
+  >
+    {p.title}
+  </a>
+
+  <!-- <a href={p.url} class={"." + $page.route.id === p.url ? "current" : ""}
+  target={p.url.startsWith("http") ? "_blank" : null}
+  >
+    {p.title} 
+  </a> -->
+  
   {/each}
+  
 </nav>
 
+<!-- Add theme switcher -->
+
+<label class="color-scheme">
+  Theme:
+  <select id="theme-select" bind:value={ colorScheme }>
+      <option value="light dark">Auto</option>
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+  </select>
+</label>
+
+<!-- {
+  JSON.stringify($page)
+} -->
 <slot />
 
 <style>
@@ -82,5 +113,30 @@ nav a:hover {
   /* ^ fix dark mode color */
 
 }
+
+/* css for theme switcher */
+.color-scheme {
+  position: fixed !important;
+  top: 10px !important;
+  right: 10px !important;
+  left: auto !important;  /* Prevent left-side positioning */
+  width: auto;  /* Prevent container issues */
+  max-width: none;  /* Ensure it doesn't shrink */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 75%;
+  display: inline-flex;
+  gap: 2px;
+  z-index: 1000 !important;
+  
+}
+
+label {
+    margin-block: 0.1rem;
+}
+
 </style>
+
+
 

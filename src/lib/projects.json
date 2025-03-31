@@ -2,61 +2,73 @@
     {
         "title": "Visualizing Corporate vs. Live-in Landlords",
         "image": "./images/A2_Over_Time.jpg",
+        "year": "2025",
         "description": "An exploratory analysis of the relationships between corporate ownership rates, owner occupancy rates and demographics in Boston neighborhoods over the time period of 2004-2024."
     },
     {
         "title": "Critique by Design: Viral Visualizations",
         "image": "./images/A3_swab_chart.jpg",
+        "year": "2025",
         "description": "A study in the delicate balance between data transparency and emotive storytelling in the context of visualizing COVID cases in the US from 2020-2022."
     },
     {
         "title": "Persuasive or Deceptive Visualizations",
         "image": "./images/A4_Disaster_intensity.jpg",
+        "year": "2025",
         "description": "Contrasting visualizations of climate change indicators to argue for two different sides of a proposition."
     },
     {
         "title": "Obcaecati praesentium cumque odit?",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2024",
         "description": "Delectus quaerat, nihil similique ab recusandae ut porro ex necessitatibus inventore tempore hic provident, perferendis aut alias totam quod eius iusto nam temporibus error fuga? Quaerat dolore aliquam aut repellat."
     },
     {
         "title": "Vero ducimus at nihil.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2024",
         "description": "Sequi, quia recusandae? Cupiditate quasi, velit facilis voluptatum voluptate maxime repellat ex vero explicabo, ullam inventore assumenda id possimus natus deserunt officia tempore expedita accusantium impedit iusto perspiciatis! Fugit, eum."
     },
     {
         "title": "Est reiciendis molestias inventore.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2024",
         "description": "Tempora, eveniet veritatis minus quibusdam amet hic vero deserunt commodi eos illo odit laudantium minima nisi molestiae voluptates fugiat laborum nam impedit. Porro eaque amet minima, modi quos suscipit nihil!"
     },
     {
         "title": "Eum veniam itaque sunt?",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2024",
         "description": "Quod consequuntur aspernatur autem soluta natus dolore atque officia vitae, maiores quasi nulla labore cum pariatur asperiores, iste culpa rerum nihil adipisci assumenda velit praesentium delectus eaque dolorum. Suscipit, rem?"
     },
     {
         "title": "Quisquam debitis blanditiis ab?",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2023",
         "description": "Repellat facere delectus in ad ut, ex ab mollitia non rerum alias assumenda perferendis necessitatibus, molestias veritatis sed ipsum omnis nesciunt! Iure, aperiam commodi exercitationem ratione modi magni laborum voluptate."
     },
     {
         "title": "Nam laudantium error nobis?",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2023",
         "description": "Maxime possimus aperiam aut dolore cumque inventore recusandae, numquam delectus odit voluptate? Eaque animi placeat voluptatum et at! Ipsam, a explicabo aliquid cum itaque quasi excepturi consequatur aut id esse."
     },
     {
         "title": "Suscipit veritatis consequatur obcaecati?",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2023",
         "description": "Id obcaecati ut omnis maxime amet? Architecto nisi iure nostrum in necessitatibus ipsum unde quas repudiandae laudantium corporis, maiores quia. Recusandae magnam earum voluptate doloribus. Minima praesentium rem deleniti porro!"
     },
     {
         "title": "Suscipit nostrum ab delectus.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2023",
         "description": "Repellat eius repellendus, eos nam, totam porro mollitia animi temporibus tempora consequuntur delectus aliquam voluptatum praesentium unde cupiditate numquam deserunt! Dolorum consequuntur voluptates animi deleniti a neque dignissimos corrupti eveniet!"
     },
     {
         "title": "Nobis unde enim ipsum.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": "2023",
         "description": "Impedit molestias fugiat, laboriosam maiores reiciendis culpa dicta sint rem eaque, iste enim dolor veniam explicabo! Quasi cum aliquid sit, libero enim facere aut eveniet, adipisci quis consequatur, vel repellendus!"
     }
 ]
