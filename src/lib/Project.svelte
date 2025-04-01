@@ -1,29 +1,52 @@
-<script>
-  import projects from '$lib/projects.json'; // Import the JSON file
+<!-- <script> 
+  export let data = {};
+  export let hLevel = 2;
 </script>
 
-<div class="projects">
-  {#each projects as project}
-    <article>
-      <h2>{project.title}</h2>
-      <img src={project.image} alt={project.title} />
-      <p>{project.description}</p>
-      <p><i>{project.year}</i></p>
-    </article>
-  {/each}
-</div>
+<article>
+  <svelte:element this={"h" + hLevel}>{data.title}</svelte:element>
+  <img src={data.image} alt="" />
+  <p>{data.description}</p>
+</article>
 
 <style>
-/* Parent container for the grid */
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); /* Responsive columns */
-  gap: 1em; /* Space between items */
-  padding: 1em; /* Add padding around the grid */
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+gap: 1em;
 }
 
-/* Individual project items */
+.projects {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+gap: 1em;
+}
+
 .projects article {
+display: grid;
+grid-template-rows: subgrid;
+grid-row: span 3;
+}
+
+.projects h2 {
+margin: 0;
+}
+</style> -->
+
+<script> 
+  export let data = {};
+  export let hLevel = 2;
+</script>
+
+<article class="project-card">
+  <svelte:element this={"h" + hLevel}>{data.title}</svelte:element>
+  <img src={data.image} alt={data.title} />
+  <p>{data.description}</p>
+</article>
+
+<style>
+/* Individual project cards */
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,24 +58,15 @@
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.projects article:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive image */
-.projects img {
+/* Ensure images scale properly */
+.project-card img {
   max-width: 100%;
   height: auto;
-}
-
-/* Text styling */
-.projects h2,
-.projects p {
-  margin: 0.5em 0;
-}
-
-.projects p:last-of-type {
-  font-style: italic; /* Style for year */
+  border-radius: 6px;
 }
 </style>
