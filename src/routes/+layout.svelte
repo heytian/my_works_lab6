@@ -7,13 +7,13 @@ import { base } from "$app/paths";
 import "../style.css";
 
 
-//     let pages = [
-//   { url: "./", title: "Home" },
-//   { url: "./projects", title: "Projects" },
-//   { url: "./contact", title: "Contact" },
-//   { url: "./cv", title: "CV" },
-//   { url: "https://github.com/heytian", title: "Github" }
-// ];
+    let pages = [
+  { url: "./", title: "Home" },
+  { url: "./projects", title: "Projects" },
+  { url: "./contact", title: "Contact" },
+  { url: "./cv", title: "CV" },
+  { url: "https://github.com/heytian", title: "Github" }
+];
 
 
 // let pages = [
