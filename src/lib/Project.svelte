@@ -1,38 +1,3 @@
-<!-- <script> 
-  export let data = {};
-  export let hLevel = 2;
-</script>
-
-<article>
-  <svelte:element this={"h" + hLevel}>{data.title}</svelte:element>
-  <img src={data.image} alt="" />
-  <p>{data.description}</p>
-</article>
-
-<style>
-.projects {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-gap: 1em;
-}
-
-.projects {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-gap: 1em;
-}
-
-.projects article {
-display: grid;
-grid-template-rows: subgrid;
-grid-row: span 3;
-}
-
-.projects h2 {
-margin: 0;
-}
-</style> -->
-
 <script> 
   export let data = {};
   export let hLevel = 2;
@@ -42,6 +7,7 @@ margin: 0;
   <svelte:element this={"h" + hLevel}>{data.title}</svelte:element>
   <img src={data.image} alt={data.title} />
   <p>{data.description}</p>
+  <div><p><i>Year: {data.year}</i></p></div>
 </article>
 
 <style>
@@ -49,11 +15,11 @@ margin: 0;
 .project-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
